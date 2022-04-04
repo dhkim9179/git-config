@@ -44,3 +44,6 @@ logging:
     jdbc.connection: OFF
     application: DEBUG
     root: INFO
+    
+application:
+  test: test    
