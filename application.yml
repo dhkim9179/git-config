@@ -52,8 +52,3 @@ logging:
     jdbc.connection: OFF
     application: DEBUG
     root: INFO
-    
----
-application:
-  misc:
-    test2: 12345
