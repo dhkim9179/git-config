@@ -8,3 +8,7 @@ server:
     encoding:
       charset: utf-8
       force-response: true
+      
+application:
+  misc:
+    test: 12345      
