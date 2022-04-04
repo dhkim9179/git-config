@@ -8,5 +8,5 @@ server:
       
 application:
   misc:
-    test: 1234567890123456
-    test2: ABCDefg123
+    test: 12345
+    test2: ABCD
