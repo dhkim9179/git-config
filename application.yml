@@ -4,7 +4,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, refresh, env
+        include: "*"
 
 #서버 설정
 server:
