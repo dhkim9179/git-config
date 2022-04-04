@@ -4,7 +4,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["refresh", "env"]
+        include: health, beans
 
 #서버 설정
 server:
