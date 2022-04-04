@@ -10,7 +10,6 @@ management:
 server:
   shutdown: graceful
 
----
 spring:
   profiles:
     active: local, dev
