@@ -8,4 +8,5 @@ server:
       
 application:
   misc:
-    test: 1234567890ABCDEF      
+    test: 1234567890ABCDEF
+    test2: ABCDEFGHIJKLMNOP     
