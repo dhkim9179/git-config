@@ -20,7 +20,7 @@ spring:
     url: jdbc:log4jdbc:mariadb://172.105.236.96:3306/dhk
     username: dhk
     #password: qwer1234
-    password: ENC(Ay7hlQ/073Gm1RYseuBS6LUA+n7XSMqt)
+    password: ENC(+SzgPdyA4IiHwoTpGs2PN6CdQlT3I4zl)
     
   jpa:
     hibernate:
