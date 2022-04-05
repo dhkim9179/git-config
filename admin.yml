@@ -16,4 +16,4 @@ server:
       
 application:
   misc:
-    test: 12345
+    test: 1234567890
