@@ -4,14 +4,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, env, refresh, info
-        
-#암호화 설정
-jasypt:
-  encryptor:
-    property:
-      prefix: ENC(
-      suffix: )        
+        include: health, env, refresh, info   
 
 #서버 설정
 server:
