@@ -5,6 +5,14 @@ management:
     web:
       exposure:
         include: health, env, refresh, info
+        
+#암호화 설정
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    property:
+      prefix: ENC(
+      suffix: )        
 
 #서버 설정
 server:
