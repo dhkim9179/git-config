@@ -10,6 +10,11 @@ spring:
     username: root
     password: qwer1234!
 
+application:
+  redis:
+    host: 172.105.223.165
+    port: 6379
+
 #mybatis 설정
 mybatis:
   mapper-location: com.dominic.project
