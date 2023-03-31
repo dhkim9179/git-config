@@ -1,2 +1,6 @@
 server:
   port: 16081
+
+spring:
+  main:
+    web-application-type: reactive
