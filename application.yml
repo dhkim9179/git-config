@@ -2,11 +2,33 @@
 server:
   shutdown: graceful
 
+# mybatis 설정
+mybatis:
+  mapper-location: com.dominic
+  type-alias-package: com.dominic
+
+---
 # Spring 설정
 spring:
+  config.activate.on-profile: local
+  datasource:
+    hikari:
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      jdbc-url: jdbc:log4jdbc:mysql://172.105.223.165:3306/dominic_db
+      username: root
+      password: qwer1234!
+
+application:
+  redis:
+    host: 172.105.223.165
+    port: 6379
+
+---
+spring:
+  config.activate.on-profile: dev
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mysql://172.105.223.165:3306/dominic_db
+    url: jdbc:log4jdbc:mysql://dev-db.yanadoo.io:13307/account?serverTimezone=UTC
     username: root
     password: qwer1234!
 
@@ -14,24 +36,3 @@ application:
   redis:
     host: 172.105.223.165
     port: 6379
-
-#mybatis 설정
-mybatis:
-  mapper-location: com.dominic.project
-  type-alias-package: com.dominic.project
-
-logging:
-  charset:
-    console: utf8
-    file: utf8
-  group:
-    application: com.dominic.project
-  level:
-    jdbc.sqltiming: INFO
-    jdbc.resultsettable: INFO
-    jdbc.sqlonly: OFF
-    jdbc.audit: OFF
-    jdbc.resultset: OFF
-    jdbc.connection: OFF
-    application: DEBUG
-    root: INFO
