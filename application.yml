@@ -12,7 +12,7 @@ mybatis:
 spring:
   config.activate.on-profile: local
   datasource:
-    driver-class-name: com.mysql.jdbc.cj.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://172.105.223.165:3306/dominic_db
     username: root
     password: qwer1234!
