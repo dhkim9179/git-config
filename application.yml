@@ -13,15 +13,8 @@ logging:
     file: utf8
   group:
     application: com.dominic
-    #org.springframework.security: TRACE
   level:
-    jdbc.sqltiming: OFF
-    jdbc.resultsettable: OFF
-    jdbc.sqlonly: OFF
-    jdbc.audit: OFF
-    jdbc.resultset: OFF
-    jdbc.connection: OFF
-    application: DEBUG
+    application: INFO
     root: INFO
 
 ---
