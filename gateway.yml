@@ -2,5 +2,10 @@ server:
   port: 16081
 
 spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
   main:
     web-application-type: reactive
+
+white:
+  ip: 127.0.0.1
