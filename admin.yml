@@ -1,2 +1,11 @@
 server:
   port: 16082
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:templates/
+    suffix: .html
